@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  phishing:
+    build: ./phishing-application
+    ports:
+      - "8081:8080"
+  vulnerable:
+    build: ./vulnerable-application
+    ports:
+      - "8082:8080"
+#  hacker:
+#    image: langju/kalilinux-mac-m1
+#    stdin_open: true # docker run -i
+#    tty: true        # docker run -t
+#    ports:
+#      - "1389:1389"
+#      - "8000:8000"
