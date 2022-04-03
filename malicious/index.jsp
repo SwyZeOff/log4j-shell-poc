@@ -15,7 +15,8 @@
         <a href="https://www.insa-lyon.fr/en/" class="block w-28 bg-white text-indigo-800 mt-4 py-2 rounded-2xl font-bold mb-2">Read more</a>
         </div>
         </div>
-            <% String redirectURL = "http://10.0.2.4:8080"; response.sendRedirect(redirectURL); %>
+            <% String redirectURL = "http://10.0.2.4:8080"; response.sendRedirect(redirectURL);
+return; %>
         <div class="flex w-1/2 justify-center items-center bg-white">
         <form class="bg-white" method="POST" action="/login">
         <h1 class="text-gray-800 font-bold text-2xl mb-1">Hello Again!</h1>
